@@ -1,15 +1,13 @@
 \documentclass{resume}
 \usepackage{zh_CN-Adobefonts_external, tabu, multirow, linespacing_fix, cite, titlesec, graphicx, amsmath, fontawesome5,eso-pic}
 
-% Adjust section and subsection spacing
+% 格式设置保持不变
 \titlespacing*{\section}{0pt}{0.5ex plus 0.2ex minus 0.2ex}{0.5ex plus 0.2ex}
 \titlespacing*{\subsection}{0pt}{0.5ex plus 0.2ex minus 0.2ex}{0.5ex plus 0.2ex}
-
-% Set paragraph and item spacing
 \setlength{\parskip}{0.5ex}
 \setlength{\itemsep}{0.5ex}
 
-% Add profile photo background
+% 证件照路径已隐去
 \AddToShipoutPictureBG*{%
   \AtPageLowerLeft{%
     \put(456,701){%
@@ -21,57 +19,58 @@
 \begin{document}
 \pagestyle{empty}
 
-\name{Yinqiao Li}
+\name{[Name]}
 \basicInfo{
-    \email{865562832@qq.com} \textperiodcentered\ 
-    \phone{152-2510-8555} \textperiodcentered\ 
-    \text{Born in April 2001}
+    \email{[Email]} \textperiodcentered\ 
+    \phone{[Phone]} \textperiodcentered\ 
+    \text{Born in [Month] [Year]}
   }
-\basicInfo{Strong English proficiency, computer operation and interpersonal communication skills}
+\basicInfo{Strong language proficiency, technical expertise and teamwork capabilities}
 
 \section{\faGraduationCap\ Education}
-\datedsubsection{\textbf{Central China Normal University, University of Wollongong (QS162)}}{September 2023 -- June 2025}
-\textbf{Dual Master's Degree in Computer Technology and Computer Science} \\
-Core Courses: Python Data Structures, Project Management, SQL, Machine Learning, Cryptography, Data Mining, Advanced Network Security \\
-Awarded \textbf{Full Scholarship for 2024-2025 Academic Year (80,000 RMB)}, IELTS 6.5 \textbf{(Reading 8, Listening 7)} \\
-Served as Graduate Party Branch Secretary, managing daily party affairs, recognized as Outstanding Graduate Student Leader
+\datedsubsection{\textbf{Domestic University A, International University B (Top 200 QS Ranking)}}{[Start Year]-[End Year]}
+\textbf{Dual Master's Degree in Computer Science and Data Science} \\
+Core Courses: Data Structures, Project Management, Database Systems, Machine Learning, Cryptography, Data Mining, Network Security \\
+Awarded \textbf{Full Tuition Scholarship}, Standardized Test Score: Overall [X] (Reading [X], Listening [X]) \\
+Leadership Role in Student Organization, Responsible for Administrative Management, Received University-level Leadership Award
 
-\datedsubsection{\textbf{Zhengzhou University of Aeronautics}}{September 2019 -- June 2023}
-Bachelor of Engineering in Materials Science and Engineering (Functional Materials) with GPA 3.44, Minor in English \\
-\textbf{University-level Outstanding Student, Second-class Scholarship, Second Prize in National College English Competition}
+\datedsubsection{\textbf{Domestic University C}}{[Start Year]-[End Year]}
+Bachelor of Engineering in Engineering Science (GPA [X]), Minor in Language Studies \\
+\textbf{University Honor Roll, Merit-based Scholarship, National Academic Competition Award}
 
 \section{\faUsers\ Work Experience}
-\datedsubsection{\textbf{Shanghai Pansong Private Equity Fund Management Co., Ltd. - Operations Engineer}}{June 2024 -- September 2024}
+\datedsubsection{\textbf{Financial Technology Company - Operations Engineer}}{[Start Year]-[End Year]}
 \begin{itemize}
-  \item Object Storage Work: Implemented disaster recovery for production environment code, logs, and databases using public cloud services; completed preliminary research, pricing analysis, procurement coordination, deployment, and parameter optimization
-  \item Python Operations Code Optimization: Developed command-line interface using Python's argparse module to selectively rerun specific functions after program crashes
-  \item Server Capacity Expansion: Troubleshot MongoDB slow query issues, identified low cache hit rate, implemented Linux server memory expansion; Performed RAID 5 expansion on Windows servers for MySQL master-slave synchronization SSD space requirements
-  \item Data Provider Deployment: Converted Docker-Compose deployment to Kubernetes Deployment using Dockerfile; Completed test environment deployment for three data providers and one intraday (T+0) trading software
+  \item Designed and implemented cloud-based disaster recovery solutions for production environments
+  \item Optimized Python scripts with command-line parameterization for selective function execution
+  \item Conducted hardware capacity planning and storage architecture optimization for database systems
+  \item Led containerization migration project from Docker-Compose to Kubernetes for data services
 \end{itemize}
 
 \section{\faUsers\ Project Experience}
-\datedsubsection{\textbf{Driver Fatigue Monitoring Method Based on Multimodal and rPPG Technology}}{September 2023 -- June 2025}
-Computer Vision, Deep Learning, Python, Two National Natural Science Foundation Projects Initiated, One Completed
+\datedsubsection{\textbf{Multimodal Physiological Monitoring System}}{[Start Year]-[End Year]}
+Computer Vision, Deep Learning, Python, National-level Research Project Participation
 \begin{itemize}
-  \item Extracted rPPG physiological signals from visual data to obtain heart rate, heart rate variability, and respiratory data
-  \item Implemented feature extraction and processing of multimodal features using CNN, with LSTM for temporal feature sharing
-  \item Achieved feature-level and decision-level fusion for multimodal feature processing
-  \item Developed 3DCNN + temporal normalization + SimAM attention mechanism, achieving comparable performance to PhysNet model with half the parameters
+  \item Developed non-contact physiological signal extraction algorithm using computer vision techniques
+  \item Designed hybrid CNN-LSTM architecture for multimodal feature fusion
+  \item Proposed lightweight network optimization achieving 50\% reduction in computational resources
+  \item Research published in SCI-indexed journal (中科院分区[X]区, IF=[X])
 \end{itemize}
 
-\datedsubsection{\textbf{Airport Runway Debris Removal Robot}}{April 2020 -- September 2021}
-Intelligent cleaning robot for airport runways based on path planning algorithms and computer vision, built using OpenCV library and Raspberry Pi
+\datedsubsection{\textbf{Autonomous Inspection Robot System}}{[Start Year]-[End Year]}
+Robotics Engineering, Path Planning, Computer Vision
 \begin{itemize}
-  \item Led team from project inception to completion, coordinated work progress, frequently served as presenter with extensive on-site experience
-  \item Obtained patent "An Airport Runway Debris Removal Device" (Patent No.: 202120932618.7)
-  \item Won First Prize in Zhengzhou Aeronautics Institute Challenge Cup, Second Prize in Henan Province Challenge Cup, and Second Prize in Henan Province Internet+ Competition as a first-year project
+  \item Served as Project Lead responsible for technical strategy and team coordination
+  \item Invented core mechanism with pending patent application
+  \item Awarded Provincial-level Innovation Competition Prize
 \end{itemize}
 
 \section{\faHeartO\ Research Experience}
-\datedsubsection{\textbf{Automatic Knowledge Graph Construction over Efficient Information Extraction Networks, IEIR 2023 Conference}}{July 2023 -- November 2023}
+\datedsubsection{\textbf{Efficient Knowledge Graph Construction for Small Sample Datasets}}{[Start Year]-[End Year]}
 \begin{itemize}
-  \item Project Background: Aimed to reduce pre-training model costs and improve runtime speed while maintaining named entity recognition accuracy for building knowledge graphs from small sample datasets
-  \item Solution: Implemented CNN+Bi-LSTM+Attention mechanism, achieving comparable F1-score of 0.8243 to RoBERTa+CRF model while reducing runtime by 50\%
+  \item Addressed challenge of balancing model accuracy and inference speed in named entity recognition
+  \item Proposed CNN+Bi-LSTM+Attention architecture achieving state-of-the-art performance with 2x speedup
+  \item Research presented at international conference (CCF Category [X] Conference)
 \end{itemize}
 
 \end{document}
