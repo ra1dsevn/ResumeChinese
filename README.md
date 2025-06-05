@@ -18,23 +18,7 @@ Hit branch [master](https://github.com/billryan/resume/tree/master) if you wanna
 - 完善的 Unicode 字体支持, 因为用的是 \XeLaTeX\ 嘛
 - 完美的中文支持，使用 Adobefonts
 - 支持 FontAwesome 4.3.0 (目前还不支持使用别名)
-
-### Sample Output
-
-![resume-zh_CN.png](./resume-zh_CN.png)
-
-## Usage
-
-1. ShareLaTeX 在线编译，麻麻再也不用担心系统和发行版的问题了
-2. 使用较新的 \LaTeX\ 发行版在本地计算机编译
-
-如果确定只需要中文简历的话单独克隆 `zh_CN` 分支即可, 需要注意的是该分支包含 Adobe 的宋楷黑仿四套中文字体，体积较大，如果本地安装有Adobe这四套字体的使用 master 英文模板即可。
-
-```
-git clone https://github.com/billryan/resume.git --branch zh_CN --depth 1 --single-branch <folder>
-```
-
-如果系统已确定安装有 Adobe 的四套中文字型，在文档的开始处使用包`zh_CN-Adobefonts_internal`, 如果没有安装则使用包`zh_CN-Adobefonts_external`, 在 ShareLaTeX 上编译需要使用包`zh_CN-Adobefonts_external`.
+- 较其他开源的Latex模板完善了更好的中文支持，添加了更好的证件照排版方式（完全可自定义修改，不会因为小窗位置影响文字排版）
 
 其他具体使用可参考给出的范例，都是极其简单易懂的宏，建议先看看 [How to write a LaTeX class file and design your own CV (Part 1) - ShareLaTeX](https://www.sharelatex.com/blog/2011/03/27/how-to-write-a-latex-class-file-and-design-your-own-cv.html) 和 [How to write a LaTeX class file and design your own CV (Part 2) - ShareLaTeX](https://www.sharelatex.com/blog/2013/06/28/how-to-write-a-latex-class-file-and-design-your-own-cv.html) 了解下该模板的简单背景，下面就一些新定义的宏做简要介绍。
 
